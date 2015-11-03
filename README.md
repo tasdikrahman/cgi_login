@@ -44,7 +44,7 @@ Now go to your browser and type the url [http://localhost:8000/](http://localhos
 
 ##License
 
-[Apache license]()
+[Apache license](https://github.com/prodicus/cgi_scripting/blob/master/LICENSE)
 
 
 
