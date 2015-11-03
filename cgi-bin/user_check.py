@@ -20,7 +20,8 @@ print('<div style = "text-align:center ; "')
 print("<h1><b>Login page</b></h1>")
 
 ## making a connection to the sqlite3 database
-conn = sqlite3.connect('/home/tasdik/Downloads/souvik_refactoring/cgi-bin/user_base.db')
+## Note : If you get an error while connecting to the d, try giving the absolute path to the db file
+conn = sqlite3.connect('user_base.db')
 cur = conn.cursor()
 
 ## now to check whether the entered data is for
