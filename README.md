@@ -1,6 +1,6 @@
 ## CGI-Scripting
 
-A little something I tried when I was learning CGI-scripting with python
+A little something I tried when I was learning CGI-scripting with python. Well, a login sytem *sigh*
 
 ## Description
 
@@ -27,7 +27,7 @@ The `cgi` scripts should reside in `cgi-bin` or `htdocs` folder otherwise they w
 
 `$ chmod 755 *`
 
-inside the `cgi-bin`
+inside the `cgi-bin` directory
 
 ## Running the `CGIHTTPServer` provided by python
 
@@ -45,7 +45,3 @@ Now go to your browser and type the url [http://localhost:8000/](http://localhos
 ##License
 
 [Apache license](https://github.com/prodicus/cgi_scripting/blob/master/LICENSE)
-
-
-
-
