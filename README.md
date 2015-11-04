@@ -27,7 +27,7 @@ The `cgi` scripts should reside in `cgi-bin` or `htdocs` folder otherwise they w
 
 inside the `cgi-bin` directory
 
-## Running the `CGIHTTPServer` provided by python
+## Running `CGIHTTPServer` 
 
 Now you can use a full blown server software like `apache2` or `nginx` trying this out. But for this example, I have done it using `CGIHTTPServer` provided by default with the `python` distribution.
 
