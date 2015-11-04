@@ -1,10 +1,8 @@
-## CGI-Scripting
+## CGI-Login
 
-A little something I tried when I was learning CGI-scripting with python. Well, a login sytem *sigh*
+So this is a Simple user Login system implemented using `CGIHTTPServer` with `sqlite3` as the db.
 
-## Description
-
-So this is a Simple Login page, which gets `reg_no`, `username`, `password` from the user and queries it to `sqlite3` to check whether the user with the particular `reg_no` exists or not in the `user_base.db`
+`reg_no`, `username`, `password` are entered by the user and queried to `sqlite3` to check whether the user with the particular `reg_no` exists or not in the `user_base.db`
 
 If the user exits, redirect the `index.html` to a page which displays the particular users details like `username` and `reg_no` upon successful login.
 
