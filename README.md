@@ -8,6 +8,10 @@ If the user exits, redirect the `index.html` to a page which displays the partic
 
 If the user does not exist. Ask him, if he wants to create an account,if yes update the db accordingly
 
+##Usage
+
+![Usage](https://raw.githubusercontent.com/prodicus/cgi_login/master/cgi_login_demo.gif)
+
 ## File structure. 
 
 ```bash
