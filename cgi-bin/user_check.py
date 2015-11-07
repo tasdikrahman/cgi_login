@@ -21,7 +21,7 @@ print("<h1><b>Login page</b></h1>")
 
 ## making a connection to the sqlite3 database
 ## Note : If you get an error while connecting to the d, try giving the absolute path to the db file
-## Eg : /path/cgi-bin/user_base.db
+## eg : /path/cgi-bin/user_base.db
 conn = sqlite3.connect('user_base.db')
 cur = conn.cursor()
 
