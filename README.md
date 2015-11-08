@@ -14,31 +14,54 @@ If the user does not exist. Ask him, if he wants to create an account,if yes upd
 
 ## File structure. 
 
+Do a 
+
 ```bash
+
+$ git clone https://github.com/prodicus/cgi_login.git
+$ cd cgi_login
+~/cgi_login $ tree
 .
 ├── cgi-bin
 │   ├── create_db.py
-│   ├── user_base.db
 │   └── user_check.py
+├── cgi_login_demo.gif
 ├── index.html
-├── LICENSE
 └── README.md
+
+1 directory, 5 files
 ```
 
-The `cgi` scripts should reside in `cgi-bin` or `htdocs` folder otherwise they wont be executed. Remember to make the scripts executable. Now the `user_base.db` file should also have read and write operations for the other users too as `SQLite3` needs those permissions to create a lock on the db file. So do a 
+Next step would be to create the initial `db` file.
 
-`$ chmod 755 *`
+```bash
+~/cgi_login/cgi-bin $ ./create_db.py
+Creating the database
+table created
+default users created 
 
-inside the `cgi-bin` directory
+displaying them
+[(1081310234, 'foo', 'admin123'), (1081310251, 'admin', 'admin')]
+~/cgi_login/cgi-bin $ 
+```
+
+So we start with two default users, namely `foo` and `admin`.
+
+
+**Note :**
+
+The `cgi` scripts should reside in `cgi-bin` or `htdocs` folder otherwise they wont be executed. Remember to make the scripts executable. Now the `user_base.db` file should also have read and write operations for the other users too as `SQLite3` needs those permissions to create a lock on the db file. So inside the `cgi-bin` directory, do a 
+
+`~/cgi_login $ chmod 755 *`
+
 
 ## Running `CGIHTTPServer` 
 
-Now you can use a full blown server software like `apache2` or `nginx` trying this out. But for this example, I have done it using `CGIHTTPServer` provided by default with the `python` distribution.
+Now you can use a full blown server software like `apache2` or `nginx` for trying this out. But for this example, I have done it using `CGIHTTPServer` provided by default with the `python` distribution.
 
-To run it, first clone the repo and inside a folder, let's say `cgi_scripting` in your `home` directory.
 
 ```bash
-$~/cgi_scripting$ python -m CGIHTTPServer
+$~/cgi_login $ python -m CGIHTTPServer
 Serving HTTP on 0.0.0.0 port 8000 ...
 ```
 
@@ -46,4 +69,4 @@ Now go to your browser and type the url [http://localhost:8000/](http://localhos
 
 ##License
 
-[Apache license](https://github.com/prodicus/cgi_scripting/blob/master/LICENSE)
+MIT License [http://prodicus.mit-license.org/](http://prodicus.mit-license.org/) &copy; Tasdik Rahman
